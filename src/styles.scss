@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+$primary: #322a7d;
+$secondary: #bbc5d5;
+$dark: #11141a;
+$warning: #ffa101;
+$danger: #f35162;
+
+:root {
+  --bg-white: #ffffff;
+  --bg: #f7f8fa;
+  --bg-primary: #322a7d;
+  --bg-title: #11141a;
+  --bg-text: #7f8fa4;
+  --bg-secondary: #bbc5d5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  height: 100vh;
+}

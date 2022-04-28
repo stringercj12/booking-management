@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <div class="logo">
+    <img src="/assets/logo.png" alt="" />
+  </div>
+
+  <div>
+    <nav>
+      <ng-container *ngFor="let item of menu">
+        <div
+          class="nav-item"
+          [pTooltip]="item.title"
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <svg-icon src="/assets/icons/{{ item.iconName }}.svg"></svg-icon>
+        </div>
+      </ng-container>
+    </nav>
+  </div>
+
+  <div>
+    <a class="logout" pTooltip="Logout">
+      <svg-icon src="/assets/icons/logout.svg"></svg-icon>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="notifications">
+  <header>
+    <label class="search" for="search">
+      <i class="pi pi-search"></i>
+      <span class="line"></span>
+      <input type="text" placeholder="Search keyword" id="search" />
+    </label>
+    <div class="bell">
+      <i class="pi pi-bell"></i>
+      <div class="bool"></div>
+    </div>
+  </header>
+  <div class="user">
+    <div>
+      <div class="hello">Hello,</div>
+      <div class="name">Jonathan!</div>
+      <p>
+        Copy your bio link and paste it in your profile to let people find you.
+      </p>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/assets/user.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="reminder-header">
+    <h2>Reminders</h2>
+    <button class="view-all">
+      View all
+
+      <i class="pi pi-chevron-right"></i>
+    </button>
+  </div>
+
+  <p-scrollPanel [style]="{ width: '100%', height: '300px' }" styleClass="custom">
+    <div class="reminder-content">
+      <ng-container *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+        <div class="reminder">
+          <div class="reminder-icon">!</div>
+          <div class="reminder-info">
+            <div class="reminder-title">Booking Reminder</div>
+            <div class="reminder-subtitle">
+              Lorem ipsum dolor sit amet, consetetur
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </p-scrollPanel>
+</div>
