@@ -2,20 +2,23 @@
   width: 380px;
   height: 100vh;
   background-color: var(--bg-white);
-  display: flex;
   align-items: center;
-  // justify-content: space-between;
+  display: flex;
   flex-direction: column;
   padding: 20px 28px;
   border-left: 2px solid #e2e7ee;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 37px;
 
     .search {
       background-color: var(--bg);
@@ -167,6 +170,23 @@
           font-weight: 400;
           color: var(--bg-secondary);
         }
+      }
+    }
+  }
+}
+
+.card-pro {
+  background: url("/assets/background-upgrade-pro.png") #322a7d !important;
+  ::ng-deep {
+    .p-card {
+      width: 100%;
+      background: transparent !important;
+      border: none;
+      box-shadow: none;
+      .p-card-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
     }
   }

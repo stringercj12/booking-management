@@ -1,8 +1,304 @@
 <div class="dashboard">
   <app-sidebar></app-sidebar>
 
-  <main>
-    dszd
+  <main class="p-4">
+    <p-scrollPanel
+      [style]="{ width: '100%', height: '100%' }"
+      styleClass="custom"
+    >
+      <div class="flex align-items-center justify-content-between mb-4 flex-wrap">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="text-xs text-400">Welcome back!</p>
+        </div>
+        <div>
+          <button pButton class="bg-blue-800 font-bold">
+            Customise Blocks
+          </button>
+        </div>
+      </div>
+
+      <h3 class="mb-2">Quick Start</h3>
+
+      <div class="grid mb-4">
+        <div class="col-12 md:col-3">
+          <p-card class="text-center">
+            <small><strong>Total bookings</strong></small>
+            <h1>
+              <strong> 28,345 </strong>
+            </h1>
+          </p-card>
+        </div>
+        <div class="col-12 md:col-3">
+          <p-card class="text-center">
+            <small><strong>Pending Approval</strong></small>
+            <h1 class="text-pink-500">
+              <strong> 120 </strong>
+            </h1>
+          </p-card>
+        </div>
+        <div class="col-12 md:col-3">
+          <p-card class="text-center">
+            <small><strong>New Clients this month</strong></small>
+            <h1>
+              <strong> 89 </strong>
+            </h1>
+          </p-card>
+        </div>
+        <div class="col-12 md:col-3">
+          <p-card class="text-center">
+            <small><strong>Returning Clients</strong></small>
+            <h1>
+              <strong> 46% </strong>
+            </h1>
+          </p-card>
+        </div>
+      </div>
+
+      <p-tabView styleClass="bg-transparent border-round">
+        <p-tabPanel [headerStyle]="{'color': 'var(--yellow-500)'}" headerStyleClass="bg-transparent border-round" header="Bookings">
+          <div class="grid">
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+
+            <div class="col-12 md:col-4 lg:col-4">
+              <p-card>
+                <div>
+                  <strong>Amanda Chavez</strong>
+                </div>
+
+                <div class="mt-2">
+                  <small class="text-500">Service</small>
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="grid mt-3">
+                  <div class="col">
+                    <small class="text-500">Date</small>
+                    <p>25 Jul 2020</p>
+                  </div>
+                  <div class="col">
+                    <small class="text-500"> Time </small>
+                    <p>11:00 - 12:00</p>
+                  </div>
+                </div>
+                <ng-template pTemplate="footer">
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Accept Booking"
+                    class="p-button-help p-button-text p-button-sm"
+                  ></button>
+                  <button
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Decline"
+                    class="p-button-secondary p-button-text p-button-sm"
+                  ></button>
+                </ng-template>
+              </p-card>
+            </div>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel [headerStyle]="{'color': 'var(--yellow-500)'}" headerStyleClass="bg-transparent" header="Enquiries">
+          Enquiries
+        </p-tabPanel>
+        <p-tabPanel [headerStyle]="{'color': 'var(--yellow-500)'}" headerStyleClass="bg-transparent" header="My Services">
+          My Services
+        </p-tabPanel>
+      </p-tabView>
+    </p-scrollPanel>
   </main>
   <app-notifications></app-notifications>
 </div>

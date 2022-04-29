@@ -3,6 +3,7 @@
   height: 100%;
   background-color: var(--bg);
   main {
-    width: calc(100% - 74px - 380px);
+    width: 100%;
+    min-width: calc(100% - 74px - 380px);
   }
 }

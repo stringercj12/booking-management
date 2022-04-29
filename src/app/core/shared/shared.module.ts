@@ -9,6 +9,8 @@ import { NotificationsComponent } from './components/notifications/notifications
 import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import {CardModule} from 'primeng/card';
+import {TabViewModule} from 'primeng/tabview';
 
 @NgModule({
   declarations: [SidebarComponent, NotificationsComponent],
@@ -21,6 +23,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     AvatarModule,
     ButtonModule,
     ScrollPanelModule,
+    CardModule,
+    TabViewModule,
   ],
   exports: [
     // "Components"
@@ -34,6 +38,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     AvatarModule,
     ButtonModule,
     ScrollPanelModule,
+    CardModule,
+    TabViewModule,
   ],
 })
 export class SharedModule {}

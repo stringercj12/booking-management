@@ -25,6 +25,19 @@
     </div>
   </div>
 
+  <p-card class="w-full my-3 card-pro border-round flex">
+    <div>
+      <h2 class="text-200">
+        Upgrade <br />
+        to PRO
+      </h2>
+      <p class="text-xs text-400">For more Profile Control</p>
+    </div>
+    <div>
+      <img src="/assets/upgrade.png" alt="" />
+    </div>
+  </p-card>
+
   <div class="reminder-header">
     <h2>Reminders</h2>
     <button class="view-all">
@@ -34,7 +47,10 @@
     </button>
   </div>
 
-  <p-scrollPanel [style]="{ width: '100%', height: '300px' }" styleClass="custom">
+  <p-scrollPanel
+    [style]="{ width: '100%', height: '300px' }"
+    styleClass="custom"
+  >
     <div class="reminder-content">
       <ng-container *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
         <div class="reminder">
